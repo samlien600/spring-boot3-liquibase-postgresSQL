@@ -2,10 +2,15 @@
 ## Requirements
 - Maven 3+
 - Java 17
-- PostgresSQL DB
+- PostgreSQL DB
 
 ## Dependency
 - Spring Boot 3.1.2
+
+## Docker for postgreSQL
+```
+docker run -d --name postgres -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -v postgres_data:/var/lib/postgresql/data -p 5432:5432 postgres
+```
 
 ## Start the service
 ```
