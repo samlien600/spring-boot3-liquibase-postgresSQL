@@ -20,3 +20,12 @@ mvn spring-boot:run
 ```
 mvn liquibase:update
 ```
+## Rollback Liquibase
+```
+mvn liquibase:rollback -Dliquibase.rollbackCount=1
+```
+## add context parameter
+```
+mvn liquibase:update -Dliquibase.contexts=test
+mvn liquibase:rollback -Dliquibase.rollbackCount=1 -Dliquibase.contexts=test
+```
