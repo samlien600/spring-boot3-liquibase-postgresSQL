@@ -16,3 +16,7 @@ docker run -d --name postgres -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin 
 ```
 mvn spring-boot:run
 ```
+## Update Liquibase
+```
+mvn liquibase:update
+```
